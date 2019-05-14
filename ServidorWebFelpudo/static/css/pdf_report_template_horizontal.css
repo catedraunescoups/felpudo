@@ -1,0 +1,51 @@
+@page {
+	size:a4 landscape;
+	left:1.27cm;
+	right:1.27cm;
+	top:1.27cm;
+	bottom:1.27cm;
+	@frame header_frame {
+		-pdf-frame-content:header_content;
+		-pdf-keep-with-next;
+		bottom:0cm;
+		margin-left:1.27cm;
+		margin-right:1.27cm;
+		height:20cm;
+	}
+	@frame footer_frame {
+		-pdf-frame-content:footer_content;
+		-pdf-keep-with-next;
+		bottom:0cm;
+		margin-left:1cm;
+		margin-right:1cm;
+		height:1cm;
+	}
+}
+body{
+	font-size:14px;
+}
+.header{
+	font-weight:bold;
+	font-size:25px;
+	text-align:center;
+	color:#000000;
+}
+table {
+	-pdf-keep-with-next:true;
+}
+#id_b{
+	font-weight:bold;
+	text-align:center;
+	vertical-align:middle;
+}
+#id_c{
+	text-align:center;
+	vertical-align:middle;
+}
+#id_j{
+	text-align:justify;
+	vertical-align:middle;
+}
+.strong{
+	font-weight:bold;
+}
